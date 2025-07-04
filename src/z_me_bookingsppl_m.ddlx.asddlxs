@@ -1,0 +1,44 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+    typeName: 'Booking Suppliment',
+    typeNamePlural: 'Booking Suppliments',
+    title: {
+            type: #STANDARD,
+            label: 'Booking Suppliment Details',
+            value: 'BookingSupplementID'
+    },
+    description: { value: 'BookingID' }
+ }
+annotate view Z_C_BOOKINGSPPL_M
+    with 
+{
+  @UI.facet: [{
+    purpose: #STANDARD,
+    type:   #IDENTIFICATION_REFERENCE,
+    label: 'Booking Suppliment Information',
+    position: 10
+   }]
+    @UI.lineItem: [{ position: 10 }]
+    @UI.identification: [{ position: 10 }]
+    TravelID;
+    @UI.lineItem: [{ position: 20 }]
+    @UI.identification: [{ position: 20 }]
+    BookingID;
+    @UI.lineItem: [{ position: 30 }]
+    @UI.identification: [{ position: 30 }]
+    BookingSupplementID;
+    @UI.lineItem: [{ position: 40 }]
+    @UI.identification: [{ position: 40 }]
+    SupplementID;
+    @UI.lineItem: [{ position: 50 }]
+    @UI.identification: [{ position: 50 }]
+    Price;
+    @UI.lineItem: [{ position: 60 }]
+    @UI.identification: [{ position: 60 }]
+    CurrencyCode;
+    @UI.lineItem: [{ position: 70 }]
+    @UI.identification: [{ position: 70 }]
+    LastChangedAt;
+
+    
+}

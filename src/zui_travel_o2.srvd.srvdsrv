@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service definition Travel OData V2'
+define service ZUI_TRAVEL_O2 {
+  expose Z_C_TRAVEL_M;
+  expose Z_C_BOOKING_M;
+  expose Z_C_BOOKINGSPPL_M;
+}
